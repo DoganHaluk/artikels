@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 @NamedEntityGraph(name = "Artikel.metArtikelgroep", attributeNodes = @NamedAttributeNode("artikelgroep"))
 public class Artikel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String naam;
     private BigDecimal prijs;
